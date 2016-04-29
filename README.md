@@ -6,6 +6,10 @@
 
 In this project, I applied basic machine learning concepts on data collected for housing prices in the Boston, Massachusetts area to predict the selling price of a new home. 
 
+<h3> What I Learned </h3>
+
+From this project I was acquainted to working with datasets in Python and applying basic machine learning techniques using NumPy and Scikit-Learn. 
+
 Things I learned from this project:
 
 - How to use NumPy to investigate the latent features of a dataset.
@@ -15,8 +19,6 @@ Things I learned from this project:
 
 ![alt text](screenshots/graphexample.png "Description goes here")
 
-<h3> What I Learned </h3>
 
-From this project I was acquainted to working with datasets in Python and applying basic machine learning techniques using NumPy and Scikit-Learn. 
 
 
