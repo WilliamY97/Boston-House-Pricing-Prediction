@@ -341,7 +341,7 @@ Standard deviation of house price: 9.197
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> CRIM: The crime rate of the town. <br> RM: Average number of rooms per dwelling. <br> NOX: Nitric Oxides Concentration.</p>
+<p><strong>Answer: </strong> CRIM: The crime rate of the town. <br> RM: Average number of rooms per dwelling. <br> INDUS: Proportion of non-retail business acres per town</p>
 
 </div>
 </div>
@@ -389,7 +389,9 @@ Standard deviation of house price: 9.197
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> The features for CRIM RM and NOX correspond to the columns 0, 5, and 2.</p>
+<h4 id="Answer:--The-features-for-CRIM-RM-and-INDUS-correspond-to-the-columns-0,-5,-and-2."><strong>Answer: </strong> The features for CRIM RM and INDUS correspond to the columns 0, 5, and 2.<a class="anchor-link" href="#Answer:--The-features-for-CRIM-RM-and-INDUS-correspond-to-the-columns-0,-5,-and-2.">&#182;</a></h4><p>CRIM - 11.95 incidences of crimes per 100,000 people
+RM - 5.609 is the average number of rooms per dwelling
+INDUS: 18.1 is the proportion of non-retail business acres in town.</p>
 
 </div>
 </div>
@@ -517,7 +519,7 @@ Ensure that you have executed the code block once you are done. You'll know the 
     <span class="sd">&quot;&quot;&quot; Calculates and returns the total error between true and predicted values</span>
 <span class="sd">        based on a performance metric chosen by the student. &quot;&quot;&quot;</span>
 
-    <span class="n">error</span> <span class="o">=</span> <span class="n">metrics</span><span class="o">.</span><span class="n">mean_absolute_error</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">)</span>
+    <span class="n">error</span> <span class="o">=</span> <span class="n">metrics</span><span class="o">.</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">error</span>
 
 
@@ -571,7 +573,7 @@ Ensure that you have executed the code block once you are done. You'll know the 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> The act of predicting housing prices is a regression problem so it is most appropriate to using metrics related to regression - either MSE or MAE. In this case I chose MSE. The other four metrics are for classification problems.</p>
+<p><strong>Answer: </strong> The act of predicting housing prices is a regression problem so it is most appropriate to using metrics related to regression - either MSE or MAE. The other four metrics are for classification problems. In this case I chose MSE as we want the model to be sensitive to large errors in predicting the prices rather than a scaled weight which plays down errors when overfitting.</p>
 
 </div>
 </div>
@@ -1861,7 +1863,7 @@ XCRHRERERPTIRXJERERERI9cJEdERERE9MhFckREREREj78A2UwV9diqN8oAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> I choose the top right graph - it has a max depth of 3. As the size of the training set increases, the training error increases and the testing error decreases. The two lines seem to approach convergence.</p>
+<p><strong>Answer: </strong> I choose the top right graph - it has a max depth of 3. As the size of the training set increases - the training error increases and the testing error decreases. This is much more dramatic between 0 to 50. Around the hundreds (number of data points), the two lines seem to converge.</p>
 
 </div>
 </div>
