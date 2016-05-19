@@ -16,6 +16,7 @@ Things I learned from this project:
 - How to analyze various learning performance plots for variance and bias.
 - How to determine the best-guess model for predictions from unseen data.
 - How to evaluate a model’s performance on unseen data using previous data.
+- Model fitting, data train & test split, cross-validation, & parameter optimization with grid search.
 
 ![alt text](screenshots/graphexample.png "Description goes here")
 
